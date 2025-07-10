@@ -1,0 +1,58 @@
+package org.example.chapter09_practice.Util;
+
+/*
+    날짜 및 시간을 포맷팅하거나 파싱하는 유틸리티 클래스
+ */
+
+/**
+ * == 문서 주석 ==
+ * 클래스, 메서드 단위의 설명을 첨부
+ * @param parameterName 작성
+ * @return 반환값 작성
+ *
+ * @throws 예외 설명
+ * @exception // 예외 처리 설명
+ **/
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Stack;
+
+public class DateUtil {
+
+    // 사용할 날짜 및 시간 포맷 패턴 정의
+    private static final String PATTERN = "yyyy-MM-dd HH-mm-ss";
+
+    // 위의 패턴을 기반으로 하는 포맷터 설정
+    private static final DateTimeFormatter FORMATTER = DateTimeFormatter.ofPattern(PATTERN);
+
+
+    /* 현재 시간을 포맷된 문자열로 변환
+        @return 현재시간
+     */
+
+    public static String now() {
+        // 날짜시간데이터.format(포맷터);
+        return LocalDateTime.now().format(FORMATTER);
+    }
+
+    /*
+        전달받은 LocalDateTime 객체를 포맷 문자열로 변환
+        @param datetime 포맷할 LocalDateTime 객체
+        @return 포맷된 날짜 문자열
+     */
+    public static String format(LocalDateTime dateTime) {
+        return dateTime.format(FORMATTER);
+    }
+
+    /*
+        문자열 형태의 날짜를 LocalDateTime 객체로 파싱
+        @param datetimeStr
+        @return 포맷된 날짜 문자열
+     */
+
+    public static LocalDateTime parse(String datetimeStr) {
+        return LocalDateTime.parse(datetimeStr, FORMATTER);
+    }
+}
