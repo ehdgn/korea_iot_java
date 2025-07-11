@@ -32,7 +32,7 @@ import java.util.*;
 public class E_Map {
     public static void main(String[] args) {
         // == Map 인터페이스 메서드 == //
-        // Map<키 타입, 값 타입> 인스턴스명 = new Map 종류<>();
+        // Map<키 타입, 값 타입> 인스턴스명 = new Map종류<>();
 
         Map<String, Integer> studentAges = new HashMap<>();
 
