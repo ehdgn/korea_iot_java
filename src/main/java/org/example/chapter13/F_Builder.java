@@ -47,7 +47,6 @@ class GameCharacter {
         this.skill = builder.skill;
         this.item = builder.item;
     }
-
 }
 
 public class F_Builder {
