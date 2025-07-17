@@ -70,6 +70,10 @@ class Car {
     }
 }
 
+class ElectronicCar extends Car{
+
+}
+
 // this 키워드
 // 1) this
 //      : 인스턴스 자신을 참조
