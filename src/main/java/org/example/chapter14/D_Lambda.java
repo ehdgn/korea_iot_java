@@ -14,6 +14,7 @@ import java.util.List;
         - 인터페이스에 @FunctionalInterface 어노테이션으로 선언 가능
         - 디폴트 메서드, static 메서드는 여러 개 존재 가능
  */
+
 @FunctionalInterface
 interface MyFunctionalInterface {
     void doSomething();
