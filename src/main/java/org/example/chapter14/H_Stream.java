@@ -93,6 +93,7 @@ public class H_Stream {
         //      cf) 문자열.contains("문자열"): 해당 문자열 포함 여부를 반환(boolean)
 
         // 1)
+        System.out.println("'정'으로 시작하는 사람의 이름에 '님'을 붙여서 출력");
         streamNames
                 .filter(name -> name.startsWith("정"))
                 .map(name -> name + "님")

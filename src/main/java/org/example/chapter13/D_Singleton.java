@@ -82,7 +82,8 @@ class Example {
 
 }
 
-public class D_Singleton {
+public class
+D_Singleton {
     public static void main(String[] args) {
         // instance == null (true)
         // : 새로운 객체 생성
