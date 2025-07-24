@@ -47,7 +47,6 @@ public class BookRepository {
          */
     }
 
-
     // 도서 조회(Read - 전체)
     public List<Book> findAll() {
         return new ArrayList<>(bookStore.values()); // Map의 값은 Book 타입
